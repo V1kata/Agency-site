@@ -1,3 +1,8 @@
+:root {
+    --main-bg: #35424a;
+    --secondary-bg: #f8d64d;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    min-width: 100vw;
 }
 
 .container {
@@ -17,10 +23,10 @@ body {
 
 /* Header */
 header {
-    background: #35424a;
+    background: var(--main-bg);
     color: #ffffff;
     padding: 1rem 0;
-    border-bottom: #e8491d 3px solid;
+    border-bottom: var(--secondary-bg) 3px solid;
 }
 
 header .container {
@@ -49,7 +55,7 @@ header li {
 
 header .highlight,
 header .current a {
-    color: #e8491d;
+    color: var(--secondary-bg);
     font-weight: bold;
 }
 
@@ -113,7 +119,7 @@ main {
 }
 
 .advantages i {
-    color: #e8491d;
+    color: var(--secondary-bg);
     margin-right: 10px;
 }
 
@@ -145,7 +151,7 @@ footer .container {
 }
 
 .social-links a:hover {
-    color: #e8491d;
+    color: var(--secondary-bg);
 }
 
 @media (max-width: 768px) {
@@ -167,5 +173,17 @@ footer .container {
 
     .social-links {
         margin-top: 1rem;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .wrapper .image {
+        width: 50%;
+        margin: 0;
+        height: 50%;
     }
 }
