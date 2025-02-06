@@ -1,0 +1,95 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#welcome {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#welcome h2 {
+    color: #35424a;
+    font-size: 2.5em;
+    margin-bottom: 1rem;
+}
+
+#welcome p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.advantages {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.advantages li {
+    flex-basis: calc(50% - 0.5rem);
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.advantages li:hover {
+    transform: translateY(-5px);
+}
+
+.advantages i {
+    color: var(--secondary-bg);
+    margin-right: 10px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header ul {
+        margin-top: 1rem;
+    }
+
+    .advantages li {
+        flex-basis: 100%;
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+
+    .social-links {
+        margin-top: 1rem;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper .image {
+        width: 50%;
+        margin: 0;
+        height: 50%;
+    }
+
+    .wrapper .image img {
+        width: 100%;
+    }
+}
