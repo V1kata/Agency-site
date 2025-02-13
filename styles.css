@@ -7,8 +7,8 @@
 @import url('./styles/footer.css');
 
 :root {
-    --main-bg: #35424a;
-    --secondary-bg: #f8d64d;
+    --main-bg: rgba(232, 88, 232, 0.692);
+    --secondary-bg: purple;
 }
 
 body {
@@ -20,12 +20,11 @@ body {
     flex-direction: column;
     min-height: 100vh;
     min-width: 100vw;
-    /* overflow-y: hidden; */
 }
 
 main {
     flex: 1;
     display: flex;
     align-items: center;
-    background: linear-gradient(to bottom, #f4f4f4, #ffffff);
+    background: linear-gradient(to bottom, #f4f4f4, #efb4bf);
 }
