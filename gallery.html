@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Парти Агенция - Вашето незабравимо събитие</title>
+    <title>Галерия - Парти Агенция</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -17,10 +17,10 @@
             </div>
             <nav>
                 <ul>
-                    <li class="current"><a href="#home">Начало</a></li>
+                    <li><a href="./index.html">Начало</a></li>
                     <li><a href="./about.html">За нас</a></li>
                     <li><a href="./services.html">Услуги</a></li>
-                    <li><a href="./gallery.html">Галерия</a></li>
+                    <li class="current"><a href="#gallery">Галерия</a></li>
                     <li><a href="./prices.html">Цени</a></li>
                     <li><a href="./contacts.html">Контакти</a></li>
                 </ul>
@@ -28,25 +28,29 @@
         </div>
     </header>
     <main>
-        <div class="wrapper">
-            <section id="welcome">
-                <div class="container">
-                    <h2>Добре дошли в нашата парти агенция!</h2>
-                    <p>Създаваме незабравими моменти за вас и вашите гости</p>
-                    <ul class="advantages">
-                        <li><i class="fas fa-check"></i> Професионален екип</li>
-                        <li><i class="fas fa-check"></i> Индивидуален подход</li>
-                        <li><i class="fas fa-check"></i> Широка гама услуги</li>
-                        <li><i class="fas fa-check"></i> Гарантирано качество</li>
-                    </ul>
+        <div class="container">
+            <section id="gallery">
+                <h2>Нашата галерия</h2>
+                <p>Разгледайте някои от нашите незабравими събития.</p>
+                <div class="gallery-grid">
+                    <!-- Примерни изображения -->
+                    <div class="gallery-item">
+                        <img src="images/event1.jpg" alt="Събитие 1">
+                        <p>Описание на събитие 1</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/event2.jpg" alt="Събитие 2">
+                        <p>Описание на събитие 2</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/event3.jpg" alt="Събитие 3">
+                        <p>Описание на събитие 3</p>
+                    </div>
+                    <!-- Добавете още изображения по същия начин -->
                 </div>
-            </section>
-            <section class="image">
-                <img src="images/party-agency.png" alt="">
             </section>
         </div>
     </main>
-
     <footer>
         <div class="container">
             <p>&copy; 2023 Парти Агенция. Всички права запазени.</p>
